@@ -1,0 +1,24 @@
+# Pattern Template Matrix (Text Format)
+# Format: Pattern_Name Label Timing_Sequence
+#
+
+C_Return_CP2 sub_u 01 02 01 02 01 01 01 01 01 01 04
+D_Return_DP2 sub_u 01 02 01 02 01 01 01 02 04
+E_Return_EP2 sub_v 01 02 01 02 01 01 01 02 01 02 01 04
+F_Return_FP2 sub_u 01 02 01 02 01 01 01 02 01 02 01 01 01 04
+G_Return_GP2 sub_v 01 02 01 02 01 01 01 02 01 02 01 01 01 01 01 04
+H_Return_HP2 sub_u 01 01 02 02 02 01 01 04
+H_Return_HP3 sub_v 02 02 02 01 01 01 01 04
+I_Return_IP1 sub_u 01 02 01 02 01 01 01 02 01 02 01 01 01 02 02 02 01 01 01 01 01 04
+
+# Total patterns: 8
+
+# Pattern Statistics:
+#   C_Return_CP2: 11 samples
+#   D_Return_DP2: 9 samples
+#   E_Return_EP2: 12 samples
+#   F_Return_FP2: 14 samples
+#   G_Return_GP2: 16 samples
+#   H_Return_HP2: 8 samples
+#   H_Return_HP3: 8 samples
+#   I_Return_IP1: 22 samples

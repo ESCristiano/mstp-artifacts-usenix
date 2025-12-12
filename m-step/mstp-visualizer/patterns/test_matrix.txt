@@ -1,0 +1,8 @@
+orange 1 sub_u  01 02 01 02 01 01 01 08
+orange 1 sub_u  01 02 11 02 01 01 08 02
+orange 1 sub_v  01 02 01 02 01 08 01 02
+orange 1 sub_u  01 10 01 02 08 01 01 02
+orange 1 sub_v  01 02 01 08 01 01 01 02
+orange 1 sub_u  01 01 08 02 02 01 01 04
+orange 1 sub_v  02 08 02 01 01 01 01 04
+orange 1 sub_u  08 01 01 02 01 01 01 02

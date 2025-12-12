@@ -1,0 +1,76 @@
+[*]
+[*] GTKWave Analyzer v3.3.121 (w)1999-2024 BSI
+[*] Tue Jun 10 10:29:23 2025
+[*]
+[dumpfile] "/home/cris/Documents/0_Projects/jo-collab/m-step/mstp-visualizer/trace_visualization.vcd"
+[dumpfile_mtime] "Tue Jun 10 10:22:42 2025"
+[dumpfile_size] 1878858
+[savefile] "/home/cris/Documents/0_Projects/jo-collab/m-step/mstp-visualizer/trace_visualization.gtkw"
+[timestart] 133
+[size] 1920 1033
+[pos] -1 -1
+*-6.300000 32 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 269
+[signals_width] 256
+[sst_expanded] 1
+[sst_vpaned_height] 305
+@28
+top.clk
+@24
+top.cycle[31:0]
+@200
+-Instruction
+@22
+top.instr_addr[31:0]
+@2022
+[color] 2
+^1 /home/cris/Documents/0_Projects/jo-collab/m-step/mstp-visualizer/inst_addr_mnemonic.tbl
++{inst_raw} top.instr_addr[31:0]
+[color] 2
+^4 /home/cris/Documents/0_Projects/jo-collab/m-step/mstp-visualizer/inst_addr_raw.tbl
++{inst_full} top.instr_addr[31:0]
+@c02022
+[color] 3
+^2 /home/cris/Documents/0_Projects/jo-collab/m-step/mstp-visualizer/inst_addr_function.tbl
++{func} top.instr_addr[31:0]
+@28
+(0)top.instr_addr[31:0]
+(1)top.instr_addr[31:0]
+(2)top.instr_addr[31:0]
+(3)top.instr_addr[31:0]
+(4)top.instr_addr[31:0]
+(5)top.instr_addr[31:0]
+(6)top.instr_addr[31:0]
+(7)top.instr_addr[31:0]
+(8)top.instr_addr[31:0]
+(9)top.instr_addr[31:0]
+(10)top.instr_addr[31:0]
+(11)top.instr_addr[31:0]
+(12)top.instr_addr[31:0]
+(13)top.instr_addr[31:0]
+(14)top.instr_addr[31:0]
+(15)top.instr_addr[31:0]
+(16)top.instr_addr[31:0]
+(17)top.instr_addr[31:0]
+(18)top.instr_addr[31:0]
+(19)top.instr_addr[31:0]
+(20)top.instr_addr[31:0]
+(21)top.instr_addr[31:0]
+(22)top.instr_addr[31:0]
+(23)top.instr_addr[31:0]
+(24)top.instr_addr[31:0]
+(25)top.instr_addr[31:0]
+(26)top.instr_addr[31:0]
+(27)top.instr_addr[31:0]
+(28)top.instr_addr[31:0]
+(29)top.instr_addr[31:0]
+(30)top.instr_addr[31:0]
+(31)top.instr_addr[31:0]
+@1401200
+-group_end
+@200
+-Timming
+@23
+top.inst_len[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,14 @@
+diff --git a/toolchain_GNUARM.cmake b/toolchain_GNUARM.cmake
+index 4d053b849..1810c1771 100644
+--- a/toolchain_GNUARM.cmake
++++ b/toolchain_GNUARM.cmake
+@@ -118,7 +118,8 @@ add_compile_options(
+     -fno-builtin
+     -fshort-enums
+     -funsigned-char
+-    -mthumb
++    -mthumb
++    -Os
+     $<$<COMPILE_LANGUAGE:C>:-std=c99>
+     $<$<COMPILE_LANGUAGE:CXX>:-std=c++11>
+     $<$<OR:$<BOOL:${TFM_DEBUG_SYMBOLS}>,$<BOOL:${TFM_CODE_COVERAGE}>>:-g>

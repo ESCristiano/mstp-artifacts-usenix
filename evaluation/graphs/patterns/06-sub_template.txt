@@ -1,0 +1,8 @@
+orange SUB_U_1 sub_u  01 02 01 02 01 01 01 01 01 01 04
+orange SUB_U_2 sub_u  01 02 01 02 01 01 01 02 04
+orange SUB_U_3 sub_u  01 02 01 02 01 01 01 02 01 02 01 01 01 04
+orange SUB_U_4 sub_u  01 01 02 02 02 01 01 04
+orange SUB_U_5 sub_u  01 02 01 02 01 01 01 02 01 02 01 01 01 02 02 02 01 01 01 01 01 04
+orange SUB_V_1 sub_v  01 02 01 02 01 01 01 02 01 02 01 04
+orange SUB_V_2 sub_v  01 02 01 02 01 01 01 02 01 02 01 01 01 01 01 04
+orange SUB_V_3 sub_v  02 02 02 01 01 01 01 04

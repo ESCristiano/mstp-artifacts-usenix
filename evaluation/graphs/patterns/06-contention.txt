@@ -1,0 +1,12 @@
+Color_type: Probability #Integer
+Gradient: orange
+Min_number_of_colors: 100
+Y: SRAM1 FLASH AHB1 APB1
+X: SRAM1 FLASH AHB1 APB1
+
+0.00 0.00 0.00 1.00
+0.00 0.00 1.00 0.00
+0.00 0.31 0.00 0.00
+1.00 0.00 0.00 0.00
+
+# flash cont -> 126 per 1000, due to flash cont + 187 (total: 313) due to cache misses on the other stream of instructions 

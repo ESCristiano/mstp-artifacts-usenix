@@ -1,0 +1,18 @@
+{
+  "manifest_list": [
+    {
+      "description": "TFM PRoT PoC crypto attack",
+      "manifest": "PRoT_crypto_attack.yaml",
+      "output_path": "PRoT_crypto_attack",
+      "conditional": "PROT_CRYPTO_ATTACK",
+      "version_major": 0,
+      "version_minor": 1,
+      "pid": 276,
+      "linker_pattern": {
+        "library_list": [
+          "*tfm_*partition_PRoT_crypto_attack.*"
+        ]
+      }
+    }
+  ]
+}

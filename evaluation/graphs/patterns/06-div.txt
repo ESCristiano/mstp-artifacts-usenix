@@ -1,0 +1,15 @@
+Color_type: Integer #Integer or Probability
+Gradient: orange
+# Min_number_of_colors: 9
+Y: 4b 8b 12b 16b 20b 24b 28b 32b #1s number of bits 
+X: 4b 8b 12b 16b 20b 24b 28b 32b #1s number of bits
+
+10 09 08 07 06 05 04 03
+09 08 07 06 05 04 03 02
+09 08 07 06 05 03 02 02
+09 08 07 06 03 02 02 02
+09 08 07 03 02 02 02 02
+09 08 03 02 02 02 02 02
+09 03 02 02 02 02 02 02
+03 02 02 02 02 02 02 02
+

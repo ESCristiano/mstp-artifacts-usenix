@@ -1,0 +1,11 @@
+using sysbus
+
+mach create
+# This is relative to where renode is running
+machine LoadPlatformDescription @boards/stm32l552.repl
+
+# This is relative to where renode is running
+sysbus LoadELF @../../../exp-single-step-tz-baremetal/STM32L5-Single-step_Cache_110MHz_TZ_Baremetal/NonSecure/build/STM32L5-Single-step_Cache_110MHz_NS.elf 
+sysbus LoadELF @../../../exp-single-step-tz-baremetal/STM32L5-Single-step_Cache_110MHz_TZ_Baremetal/Secure/build/STM32L5-Single-step_Cache_110MHz_S.elf
+
+machine StartGdbServer 3333

@@ -1,0 +1,29 @@
+$name?="stm32l552"
+
+# These paths are relative to where renode is running
+$repl?=@boards/stm32l552.repl
+
+$bin_ns?=@../../../exp-m-step-eval-tfm/src/NonSecure/build/tfm_ns.elf
+$bin_s?=@../../../copilot/build/nucleo_l552ze_q_mstp_s/bin/tfm_s.elf
+$bl2?=@../../../copilot/build/nucleo_l552ze_q_mstp_s/bin/bl2.elf
+
+using sysbus
+mach create $name
+
+machine LoadPlatformDescription $repl
+
+showAnalyzer lpuart1_s
+
+#lpuart1_s RecordToAsciinema $ORIGIN/hello_world-asciinema
+
+emulation CreateUartPtyTerminal "external_uart" "/tmp/renode-uart" true
+
+# You can easily connect using: minicom -D /tmp/renode-uart
+connector Connect lpuart1_s external_uart
+
+# This is relative to where renode is running
+sysbus LoadELF $bin_ns
+sysbus LoadELF $bin_s
+#sysbus LoadELF $bl2
+
+machine StartGdbServer 3333

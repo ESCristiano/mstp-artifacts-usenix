@@ -1,0 +1,116 @@
+[INF] Starting bootloader
+[WRN] This device was provisioned with dummy keys. This device is NOT SECURE
+[INF] Image index: 1, Swap type: none
+[INF] Image index: 0, Swap type: none
+[INF] Bootloader chainload address offset: 0x14000
+[INF] Jumping to the first image slot
+Booting TF-M v2.1.1
+[WRN] This device was provisioned with dummy keys. This device is NOT SECURE
+[Sec Thread] Secure image initializing!
+TF-M isolation level is: 0x00000002
+[S] PRoT_crypto_attack_main started
+appRoT_main-----------------############
+[INF][PS] Encryption alg: 0x5500100
+[DBG][Crypto] Init Mbed TLS 3.6.2...
+[DBG][Crypto] Init Mbed TLS 3.6.2... complete.
+[INF][Crypto] Init HW accelerator...
+[INF][Crypto] Init HW accelerator... complete.
+Hello NS World!!
+####################################################################
+####################################################################
+---------------------------------------
+Setup 0
+Victim 0: victim_baseline_s_tfm
+---------------------------------------
+R#0
+---------------------------------------
+Setup 0
+Victim 1: victim_normal_inst_s_tfm
+---------------------------------------
+R#0
+R#1
+R#2
+R#3
+R#4
+R#5
+R#6
+R#7
+R#8
+R#9
+---------------------------------------
+Setup 0
+Victim 2: victim_ICI_inst_s_tfm
+---------------------------------------
+R#0
+R#1
+R#2
+R#3
+R#4
+R#5
+R#6
+R#7
+R#8
+R#9
+---------------------------------------
+Setup 0
+Victim 3: victim_IRI_inst_s_tfm
+---------------------------------------
+R#0
+R#1
+R#2
+R#3
+R#4
+R#5
+R#6
+R#7
+R#8
+R#9
+---------------------------------------
+Setup 0
+Victim 4: victim_IRI_ATOMIC_inst_s_tfm
+---------------------------------------
+R#0
+R#1
+R#2
+R#3
+R#4
+R#5
+R#6
+R#7
+R#8
+R#9
+---------------------------------------
+Setup 0
+Victim 5: victim_printf_inst_s_tfm
+---------------------------------------
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#0
+R#1
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#2
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#3
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#4
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#5
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#6
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#7
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#8
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+R#9
+(USENIX SECURITY'26 Paper): Testing M-Step over a generic stdio.h lib printf.
+
+                             :     Base   Atomic             ICI             IRI        IRI_ATOM          Printf
+Zero Steps    (Avg   10 runs):     6700        0           29337            3719           98996             223
+Partial Steps (Avg   10 runs):      548        0            2334               0               0             104
+Single Steps  (Avg   10 runs):      965     1993            1996               3            2000            1305
+Inst Folding  (Avg   10 runs):       46        0               0               0               0               3
+Multi Steps   (Avg   10 runs):        0        0               0             146               0               0
+Interrupts    (Avg   10 runs):     8213     1993           33667            3868          100996            1633
+Ratio         (Avg   10 runs):      184     1000             128               0              19             862
+End NS World!!
+

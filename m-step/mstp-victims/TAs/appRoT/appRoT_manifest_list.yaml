@@ -1,0 +1,18 @@
+{
+  "manifest_list": [
+    {
+      "description": "TFM appRoT Partition Service",
+      "manifest": "appRoT.yaml",
+      "output_path": "appRoT",
+      "conditional": "APPROT",
+      "version_major": 0,
+      "version_minor": 1,
+      "pid": 275,
+      "linker_pattern": {
+        "library_list": [
+          "*tfm_*partition_appRoT.*"
+        ]
+      }
+    }
+  ]
+}

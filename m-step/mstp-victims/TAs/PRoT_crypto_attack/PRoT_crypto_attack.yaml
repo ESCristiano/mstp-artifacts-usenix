@@ -1,0 +1,34 @@
+{
+  "psa_framework_version": 1.1,
+  "name": "TFM_SP_PROT_CRYPTO_ATTACK",
+  "type": "PSA-ROT",
+  "priority": "NORMAL",
+  "model": "IPC",
+  "entry_point": "PRoT_crypto_attack_main",
+  "stack_size": "0x1000",
+  "services": [
+    {
+      "name": "RSA_DECRYPT_REQUEST",
+      "sid": "0x10002001",
+      "non_secure_clients": true,
+      "connection_based": false,
+      "stateless_handle": "auto",
+      "version": 1,
+      "version_policy": "RELAXED",
+      "mm_iovec": "disable",
+    },
+    {
+      "name": "RSA_EXPORT_PUB_KEY",
+      "sid": "0x10002002",
+      "non_secure_clients": true,
+      "connection_based": false,
+      "stateless_handle": "auto",
+      "version": 1,
+      "version_policy": "RELAXED",
+      "mm_iovec": "disable",
+    },
+  ],
+   "dependencies": [
+    "TFM_CRYPTO"
+  ]
+}

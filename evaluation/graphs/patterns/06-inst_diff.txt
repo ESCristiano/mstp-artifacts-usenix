@@ -1,0 +1,69 @@
+Color_type: Probability # Probability or Integer
+Gradient: orange
+Min_number_of_colors: 1000
+Y: 1 2 3 4 5 6 7 8
+X: MOV LD1 ST1 LD2 ST2 PUSH POP UDIV
+
+0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+0.00 0.00 0.00 0.08 0.08 0.00 0.00 0.00
+0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+0.00 0.00 0.70 0.00 0.00 0.18 0.00 0.00
+0.00 0.00 0.00 0.92 0.92 0.02 0.17 0.00
+0.00 0.08 0.08 0.00 0.00 0.80 0.03 1.00  
+0.00 0.92 0.92 0.00 0.00 0.01 0.80 0.00  
+1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00  
+
+# Experiment 1:
+# Total entries: 1004
+# Value counts:
+#   Value '01': 1002 times (~1)
+#   Value '02': 2 times (~0)
+
+# Experiment 2: LD1
+# Total entries: 933
+# Value counts:
+#   Value '01': 2 times (~0)
+#   Value '02': 860 times (~0.92)
+#   Value '03': 71 times (~0.08)
+
+# Experiment 3: ST1
+# Total entries: 934
+# Value counts:
+#   Value '01': 2 times (~0)
+#   Value '02': 861 times (~0.92)
+#   Value '03': 71 times (~0.08)
+
+# Experiment 4: LD2
+# Total entries: 935
+# Value counts:
+#   Value '01': 4 times
+#   Value '02': 860 times (~0.92)
+#   Value '05': 71 times (~0.08)
+
+# Experiment 5: ST2
+# Total entries: 935
+# Value counts:
+#   Value '01': 4 times  (~0)
+#   Value '02': 2 times  (~0)
+#   Value '04': 858 times (~0.92)
+#   Value '07': 71 times (~0.08)
+
+# Experiment 6: push
+# Total entries: 1001
+# Value counts:
+#   Value '02': 10 times (~0.01)
+#   Value '03': 800 times (~0.8)
+#   Value '04': 20 times (~0.02)
+#   Value '05': 180 times (~0.18)
+
+# Experiment 7: POP
+# Total entries: 1000
+# Value counts:
+#   Value '02': 800 times (~0.8)
+#   Value '04': 30 times (~0.03)
+#   Value '05': 170 times (~0.170)
+
+# Experiment 8: udiv r0, 0xffff, 0xffff
+# Total entries: 1000
+# Value counts:
+#   Value '03': 1000 times (~1)
